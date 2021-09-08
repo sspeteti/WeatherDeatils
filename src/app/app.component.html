@@ -1,0 +1,105 @@
+<!-- Background image -->
+<div
+  class="bg-image justify-content-center align-items-center"
+  style="
+    background-image: url('https://mdbootstrap.com/img/new/fluid/nature/015.jpg');
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+  "
+>
+  <div class="container-fluid">
+    <span>
+      <h4 class="text-white text-center">European Weather report</h4>
+      <p class="text-white text-center">
+        The following is the weather current weather report of the 5 european
+        countries
+      </p>
+    </span>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <div class="card text-center" style="width: 12rem">
+          <img src="/assets/Images/amsterdam.jpg" class="card-img-top" />
+          <h5 class="card-title center">Amsterdam</h5>
+          <button
+            type="button btn-sm"
+            class="btn btn-success"
+            value="amsterdam"
+            id="amsterdam"
+            (click)="getCurrentLoc($event)"
+          >
+            Current weather
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center" style="width: 12rem">
+          <img src="/assets/Images/austria.jpg" class="card-img-top" />
+          <h5 class="card-title center">Vienna</h5>
+          <button
+            type="button btn-sm"
+            class="btn btn-success"
+            value="vienna"
+            id="vienna"
+            (click)="getCurrentLoc($event)"
+          >
+            Current weather
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center" style="width: 12rem">
+          <img src="/assets/Images/greece.jpg" class="card-img-top" />
+          <h5 class="card-title center">Athens</h5>
+          <button
+            type="button btn-sm"
+            class="btn btn-success"
+            value="athens"
+            id="athens"
+            (click)="getCurrentLoc($event)"
+          >
+            Current weather
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center" style="width: 12rem">
+          <img src="/assets/Images/pol.jpg" class="card-img-top" />
+          <h5 class="card-title center">Warsaw</h5>
+          <button
+            type="button btn-sm"
+            class="btn btn-success"
+            value="warsaw"
+            id="warsaw"
+            (click)="getCurrentLoc($event)"
+          >
+            Current weather
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center" style="width: 12rem">
+          <img src="/assets/Images/swis.jpg" class="card-img-top" />
+          <h5 class="card-title center">Bern</h5>
+          <button
+            type="button btn-sm"
+            class="btn btn-success"
+            value="bern"
+            id="bern"
+            (click)="getCurrentLoc($event)"
+          >
+            Current weather
+          </button>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  <p class="text-white text-center">
+    Click the Current weather To get the current Weather Report
+  </p>
+</div>
+<router-outlet></router-outlet>
+
+
